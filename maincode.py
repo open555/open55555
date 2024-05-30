@@ -1,5 +1,5 @@
 # 자세한 온도 세분화와 옷차림 세분화는 추후에 진행할 예정 
-
+# 직접 코드 작성 ㅎㅎ ㅎ
 import pandas as pd
 
 clothing_data = {
