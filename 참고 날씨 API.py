@@ -1,5 +1,6 @@
 # 날씨 API를 가지고 와 연동시켜 저희가 맞는 옷차림을 찾아 매칭시킬 예정입니다.
 # 날씨 API를 연동시키는 필요한 참고 코드입니다.
+#출처 https://ai-creator.tistory.com/31?category=759438
 
 import requests
 import json
