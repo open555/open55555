@@ -10,22 +10,36 @@ xy_df = pd.read_csv("/Users/yang-yeeun/Downloads/location_file.csv")
 # NaN 값을 0으로 대체합니다.
 a_df = xy_df.fillna(0)
 
-# 사용자 입력을 받습니다.
-input_1단계 = input("1단계 값을 입력하세요: ")
-input_2단계 = input("2단계 값을 입력하세요: ")
-input_3단계 = input("3단계 값을 입력하세요 (값이 없으면 Enter를 누르세요): ")
+while True:
+    input_1단계 = input("특별시/광역시/도를 입력하세요.(예:서울특별시, 제주특별자치도) : ")
+    input_2단계 = input("시/군/구를 입력하세요.(예:종로구, 제주시) (값이 없으면 0): ")
+    input_3단계 = input("읍/면/동을 입력하세요. (예:청운효자동, 이도1동) (값이 없으면 0): ")
 
-# 필터링 조건을 확인합니다.
-print(f"Filtering with: 1단계={input_1단계}, 2단계={input_2단계}, 3단계={input_3단계}")
+    # 필터링 조건을 설정합니다.
+    filters = {'1단계': input_1단계}
+    if input_2단계 != '0':
+        filters['2단계'] = input_2단계
+    if input_3단계 != '0':
+        filters['3단계'] = input_3단계
 
-# 입력된 값과 데이터프레임의 값이 일치하는 행을 필터링합니다.
-filtered_df = a_df[(a_df['1단계'] == input_1단계) & (a_df['2단계'] == input_2단계) & (a_df['3단계'] == input_3단계)]
+    # 필터링 조건을 확인합니다.
+    print(f"Filtering with: {filters}")
 
-# 필터링된 결과를 출력합니다.
-if not filtered_df.empty:
-    # 사용자가 입력한 값과 매칭되는 좌표를 가져옵니다.
-    nx = filtered_df.iloc[0]['격자 X']
-    ny = filtered_df.iloc[0]['격자 Y']
+    # 입력된 값과 데이터프레임의 값이 일치하는 행을 필터링합니다.
+    filtered_df = a_df.copy()
+    for key, value in filters.items():
+        if value != '0':
+            filtered_df = filtered_df[filtered_df[key] == value]
+
+    # 필터링된 결과를 출력합니다.
+    if not filtered_df.empty:
+        # 사용자가 입력한 값과 매칭되는 좌표를 가져옵니다.
+        nx = filtered_df.iloc[0]['격자 X']
+        ny = filtered_df.iloc[0]['격자 Y']
+        print(f"격자 X: {nx}, 격자 Y: {ny}")
+        break
+    else:
+        print("조건에 맞춰 다시 입력해주세요.")
 
     # API 설정
     API_Key = "GnN6ZfisAdn3qQa34ktd+Z+++jaBYfhYjNgg7h3tlIwDdm+3H2MxKqDJrN9QC6WC4kQoC8yckS3Qgwm9CqzoSQ=="
