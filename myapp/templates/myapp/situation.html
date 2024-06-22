@@ -8,10 +8,12 @@
     <link href="{% static 'myapp/situation.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
+    # 상단 메뉴 바
     <h3 class="menu-bar con-min-width">
         <div class="con">
             <nav class="menu-bar__menu-box-1 text-align-center">
                 <ul class="inline-grid">
+                    # 메뉴 항목
                     <li><a href="{% url 'weather' %}">Weather Home</a></li>
                     <li><a href="{% url 'trend' %}">Trend Analysis</a></li>
                     <li><a href="{% url 'method_of_use' %}">Method of Use</a></li>
@@ -24,10 +26,11 @@
     </h3>
 
     <div class="container">
-        <!-- 운동 -->
+        # 운동
         <div class="situation-section">
             <h2>1. 운동</h2>
-            <div class="image-container">
+            <div class="image-container"> 
+                # 운동복 이미지
                 <img src="{% static 'myapp/images/exer1.png' %}" alt="운동 복장">
                 <img src="{% static 'myapp/images/exer2.png' %}"alt="운동 복장">
             </div>
@@ -42,10 +45,11 @@
             </div>
         </div>
 
-        <!-- 면접 -->
+        # 면접
         <div class="situation-section">
             <h2>2. 면접</h2>
             <div class="image-container">
+                # 면접룩 이미지
                 <img src="{% static 'myapp/images/int1.png' %}" alt="운동 복장">
                 <img src="{% static 'myapp/images/int2.png' %}" alt="운동 복장">
             </div>
@@ -57,10 +61,11 @@
             </div>
         </div>
 
-        <!-- 결혼식 -->
+       # 결혼식
         <div class="situation-section">
             <h2>3. 결혼식</h2>
            <div class="image-container">
+               # 하객룩 이미지
                 <img src="{% static 'myapp/images/wed1.png' %}" alt="운동 복장">
                 <img src="{% static 'myapp/images/wed2.png' %}" alt="운동 복장">
             </div>
@@ -76,9 +81,10 @@
             </div>
         </div>
 
-        <!-- 장례식장 -->
+        # 장례식장
         <div class="situation-section">
             <h2>4. 장례식장</h2>
+             # 장례식 복장
             <img src="{% static 'myapp/images/j.png' %}" alt="장례식장 복장" class="centered-image">
             <div class="situation-content">
                 <div class="text">
