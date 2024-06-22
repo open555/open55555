@@ -4,15 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Weather and Clothing Recommendation</title>
+  <title>Weather and Clothing Recommendation</title> #  페이지 제목
   {% load static %}
   <link href="{% static 'myapp/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
+  # 메뉴 바 섹션
   <h3 class="menu-bar con-min-width">
     <div class="con">
       <nav class="menu-bar__menu-box-1">
         <ul>
+          # 메뉴 항목
             <li><a href="{% url 'weather' %}">Weather Home</a></li>
             <li><a href="{% url 'trend' %}">Trend Analysis</a></li>
             <li><a href="{% url 'method_of_use' %}">Method of Use</a></li>
@@ -25,11 +27,13 @@
   </h3>
   <div class="main">
     <div>
+      # 로고 이미지
       <img src="{% static 'myapp/images/logo.png' %}" width="400" height="130" alt="Logo">
     </div>
-    <div class="content">
+    <div class="content"> # 메인 콘텐츠
         <h2>오늘의 OOTD는?</h2>
         {% if weather_data %}
+              # 날씨 데이터를 뽑아와 그에 맞는 옷차림 추
             <p>오늘의 기온: {{ weather_data.tmp }}°C</p>
             <p>오늘의 날씨: {{ weather_data.state }}</p>
             <p>추천 옷차림:</p>
@@ -39,11 +43,13 @@
                 <li>신발: {{ weather_data.recommendation.footwear }}</li>
                 <li>액세서리: {{ weather_data.recommendation.accessories }}</li>
             </ul>
+              # 추천 옷차림 사진
             <div class="photo-section">
                 <p>추천 옷차림 사진</p>
                 <img src="{% static weather_data.image %}" alt="Weather-based Clothing Recommendation" class="weather-image">
             </div>
         {% elif error %}
+            # 에러 메시지 표시
             <p>{{ error }}</p>
         {% endif %}
     </div>
