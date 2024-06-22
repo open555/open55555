@@ -26,6 +26,7 @@ h3.menu-bar {
 
 .menu-bar__menu-box-1 > ul > li {
     display: inline-block; /* 메뉴 항목을 가로로 나열 */
+}
 
 .menu-bar__menu-box-1 > ul > li > a {
     display: block;
@@ -57,7 +58,7 @@ h2.spring {
     text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8); /* 그림자 효과 */
     margin-top: 30px; /* 제목 위 여백 */
     margin-bottom: 20px; /* 제목 아래 여백 */
-        }
+}
 
 h2.summer {
     color: #FFC107; /* 여름 제목 색상 */
@@ -65,7 +66,7 @@ h2.summer {
     text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8); /* 그림자 효과 */
     margin-top: 30px; /* 제목 위 여백 */
     margin-bottom: 20px; /* 제목 아래 여백 */
-        }
+}
 
 h2.autumn {
     color: #b54c1a; /* 가을 제목 색상 */
