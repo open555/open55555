@@ -1,3 +1,4 @@
+# 폰트 스타일
 @font-face {
   font-family: 'SBAggroB';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
@@ -5,12 +6,13 @@
   font-style: normal;
 }
 
+# 기본 스타일 초기화
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+# 상단 메뉴바 스타일
 a {
   color: inherit;
   font-size: 5px;
@@ -40,24 +42,26 @@ a:active {
 }
 
 .menu-bar__menu-box-1 > ul > li {
-  display: inline-block;
+  display: inline-block; /* 메뉴 항목 가로 배치 */
 }
 
 .menu-bar__menu-box-1 > ul > li > a {
-  display: block;
-  font-size: 20px;
-  padding: 10px 30px;
+  display: block; /* 링크를 블록 요소로 설정하여 전체 너비 클릭 가능하게 함 */
+  font-size: 20px; /* 메뉴 항목 폰트 크기 */
+  padding: 10px 30px; /* 내부 여백 설정 */
 }
 
 body {
   display: contents;
 }
 
+# 메인 스타일
 .main {
   margin-top: 175px;
   text-align: center;
 }
 
+# 입력 상자 스타일
 .input-box {
   margin-top: 20px;
   width: 584px;
@@ -74,6 +78,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+# 검색 아이콘
 .search-icon {
   position: relative;
   right: 45px;
@@ -82,6 +87,7 @@ body {
   background-color: transparent;
 }
 
+# 오늘의 ootd는? 
 .content {
   font-family: 'SBAggroB';
   font-weight: normal;
@@ -90,7 +96,7 @@ body {
   font-size: 30px;
   text-shadow: 2px 2px 4px rgba(200, 200, 200, 0.8), 2px 2px 4px rgba(255, 255, 255, 0.4);
 }
-
+# 하단의 내용
 .content2 {
   font-family: 'SBAggroB';
   font-weight: normal;
