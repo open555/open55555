@@ -1,11 +1,11 @@
-# 폰트 스타일
+/* 폰트 스타일 */
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-# 전체 페이지 스타일
+/* 전체 페이지 스타일 */
 body {
     font-family: 'SBAggroB', Arial, sans-serif; /* SBAggroB 폰트와 대체 폰트 지정 */
     color: #76c7e4; /* 텍스트 색상 설정 */
@@ -13,7 +13,7 @@ body {
     margin: 0; /* 바깥 여백 제거 */
     padding: 20px; /* 안쪽 여백 설정 */
 }
-# 상단의 메뉴바 스타일
+/* 상단의 메뉴바 스타일 */
 h3.menu-bar {
     margin-bottom: 100px; /* 하단 여백 설정 */
 } 
@@ -44,7 +44,7 @@ a:active {          # 활성화된 상태일 때 (클릭하고 있는 동안)
     color: #bdbebd;  # 색상 변경
 }
 
-# 화면 사용 공간 지정
+/* 화면 사용 공간 지정 */
 .container {
     max-width: 800px; /* 최대 너비 설정 */
     margin-top: 30px; /* 위쪽 여백 설정 */
@@ -54,20 +54,20 @@ a:active {          # 활성화된 상태일 때 (클릭하고 있는 동안)
     margin-bottom: 30px; /* 아래쪽 여백 설정 */
 }
 
-# 주제별 스타일
+/* 주제별 스타일 */
 .situation-section {
     margin-bottom: 150px; /* 주제별 섹션 간 여백 설정 */
     text-align: left; /* 왼쪽 정렬 */
 }
 
-# 제목 텍스트 스타일
+/* 제목 텍스트 스타일 */
 .situation-section h2 {
     color: #000; /* 제목 텍스트 색상 설정 */
     font-size: 1.8em; /* 제목 폰트 크기 설정 */
     margin-bottom: 10px; /* 하단 여백 설정 */
 }
 
-# 이미지 스타일
+/* 이미지 스타일 */
 .image-container {
     display: flex; /* 이미지들을 행으로 배치 */
     justify-content: center; /* 가운데 정렬 */
@@ -81,7 +81,7 @@ a:active {          # 활성화된 상태일 때 (클릭하고 있는 동안)
     border-radius: 10px; /* 이미지 모서리 둥글게 처리 */
 }
 
-# 내용 텍스트 스타일
+/* 내용 텍스트 스타일 */
 .situation-content .text {
     font-size: 1.1em; /* 내용 텍스트 크기 설정 */
     color: #4e4e4e; /* 내용 텍스트 색상 설정 */
