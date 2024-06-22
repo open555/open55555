@@ -1,4 +1,4 @@
-# 폰트 스타일
+/* 폰트 스타일 */
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
@@ -6,7 +6,7 @@
     font-style: normal;
 }
 
-# 전체 페이지 스타일
+/* 전체 페이지 스타일 */
 body {
     font-family: 'SBAggroB', Arial, sans-serif; /* 폰트 설정 */
     color: #76c7e4; /* 텍스트 색상 설정 */
@@ -15,7 +15,7 @@ body {
     padding: 20px; /* 안쪽 여백 설정 */
 }
 
-# 타이틀 스타일
+/* 타이틀 스타일 */
 h1 {
     color: #31a5c8; /* 제목 텍스트 색상 */
     text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8); /* 텍스트 그림자 설정 */
@@ -23,7 +23,7 @@ h1 {
     margin-bottom: 20px; /* 아래 여백 */
 }
 
-# 상단의 메뉴바 스타일
+/* 상단의 메뉴바 스타일 */
 .menu-bar__menu-box-1 > ul {
     text-align: center;  /* 가운데 정렬 */
 }
@@ -50,7 +50,7 @@ a:active {
     color: #bdbebd; /* 호버 및 액티브 상태에서의 링크 색상 */
 }
 
-# 콘텐츠 컨테이너 스타일
+/* 콘텐츠 컨테이너 스타일 */
 .container {
     max-width: 800px; /* 최대 너비 */
     margin: 0 auto; /* 가운데 정렬 */
@@ -61,11 +61,11 @@ a:active {
     margin-bottom: 20px; /* 아래 여백 */
 }
 
-# 컨테이너 안쪽 제목 스타일
+/* 컨테이너 안쪽 제목 스타일 */
 h2 {
     margin-top: 30px; /* 위 여백 */
 }
-# 컨테이너 안쪽 내용 스타일
+/* 컨테이너 안쪽 내용 스타일 */
 form {
     display: flex; /* 플렉스 박스 설정 */
     flex-direction: column; /* 세로 배치 */
@@ -75,7 +75,7 @@ label {
 }
 
 
-# 내용 작성부분 스타일
+/* 내용 작성부분 스타일 */
 input[type="text"],
 textarea {
     width: 100%; /* 너비 설정 */
@@ -86,7 +86,7 @@ textarea {
     font-family: 'SBAggroB', Arial, sans-serif; /* 폰트 설정 */
 }
 
-# 버튼 스타일
+/* 버튼 스타일 */
 button {
    width: 100px; /* 너비 */
     padding: 10px; /* 내부 여백 */
@@ -102,7 +102,7 @@ button:hover {
     background-color: #0056b3; /* 호버 상태 배경색 */
 }
 
-# 후기 목록 스타일
+/* 후기 목록 스타일 */
 .question-list {
     margin-top: 30px; /* 위 여백 */
 }
