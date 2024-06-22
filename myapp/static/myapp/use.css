@@ -1,10 +1,11 @@
+# 폰트 스타일
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
+# 전체 페이지 스타일
 body {
     font-family: 'SBAggroB', Arial, sans-serif;
     color: #76c7e4;
@@ -12,7 +13,7 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+# 상단의 메뉴바 스타일
 h3.menu-bar {
             margin-bottom: 50px;
 }
@@ -32,16 +33,6 @@ h3.menu-bar {
     padding: 10px 30px;
 }
 
-.container {
-    max-width: 800px;
-    margin-top: 30px;
-    text-align: center; /* 가운데 정렬을 추가 */
-    max-width: 800px; /* 이미지와 텍스트의 최대 너비를 설정 */
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-}
-
 a {
     color: inherit;
     font-size: 14px; /* 원래 5px에서 14px로 수정 */
@@ -54,6 +45,18 @@ a:active {
     color: #bdbebd;
 }
 
+# 화면 사용 공간 지정
+.container {
+    max-width: 800px;
+    margin-top: 30px;
+    text-align: center; /* 가운데 정렬을 추가 */
+    max-width: 800px; /* 이미지와 텍스트의 최대 너비를 설정 */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+# 검색창 이미지
 .search-image {
             max-width: 80%; /* 이미지 최대 너비 설정 */
             height: auto; /* 높이 자동 조정 */
@@ -63,6 +66,7 @@ a:active {
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
+# 예시 이미지
 .recom1-image, .recom2-image{
             max-width: 50%; /* 이미지 최대 너비 설정 */
             height: auto; /* 높이 자동 조정 */
@@ -71,15 +75,18 @@ a:active {
             border-radius: 8px;
         }
 
+# 주제
+h1 {
+    color: #335aba;
+}
+
+# 순서
 h2 {
      margin-top: 75px;
      color: #5478d0;
 }
 
-h1 {
-    color: #335aba;
-}
-
+# 내용
 .one {
             margin-bottom: 10px;
             padding-left: 230px;
