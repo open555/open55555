@@ -41,6 +41,13 @@ h1 {
     padding: 10px 30px;
 }
 
+a {
+  color: inherit;
+  font-size: 5px; 
+  text-decoration: none; # 텍스트에 밑줄을 제거
+  transition: color 0.3s; # 부드러운 전환 효과
+} 
+
 # 콘텐츠 컨테이너 스타일
 .container {
     max-width: 800px;
@@ -92,7 +99,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-# 후 목록 스타일
+# 후기 목록 스타일
 .question-list {
     margin-top: 30px;
 }
@@ -110,11 +117,3 @@ button:hover {
 .question-item p {
     margin: 5px 0 0;
 }
-
-# 상단의 메뉴바 스타일
-a {
-  color: inherit;
-  font-size: 5px; 
-  text-decoration: none; # 텍스트에 밑줄을 제거
-  transition: color 0.3s; # 부드러운 전환 효과
-} 
