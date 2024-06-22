@@ -10,39 +10,41 @@
 ul, li {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none; /* 목록 스타일 제거 */
 }
 # 상단 메뉴바 스타일
 a {
-  color: inherit;
-  font-size: 5px;
-  text-decoration: none;
-  transition: color 0.3s;
+  color: inherit; /* 링크 색상을 부모 요소에서 상속 */
+  font-size: 5px; /* 링크 폰트 크기 */
+  text-decoration: none; /* 밑줄 제거 */
+  transition: color 0.3s; /* 색상 전환 애니메이션 */
 }
 
 a:link,
 a:visited {
-  color: #76c7e4;
+  color: #76c7e4; /* 링크 기본 색상 */
 }
 
 a:hover,
 a:active {
-  color: #bdbebd;
-}
+  color: #bdbebd; /* 링크 호버 시 색상 변경 */
+} 
 
+# 중앙 정렬을 위한 컨테이너 스타일 
 .con {
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'SBAggroB';
-  color: #76c7e4;
+  margin-left: auto; /* 왼쪽 여백 자동 설정 */
+  margin-right: auto; /* 오른쪽 여백 자동 설정 */
+  font-family: 'SBAggroB'; /* 폰트 설정 */
+  color: #76c7e4; /* 텍스트 색상 */
 }
 
+# 상단의 메뉴바 스타일
 .menu-bar__menu-box-1 > ul {
-  text-align: center;
+  text-align: center;  /* 메뉴 항목 가운데 정렬 */
 }
 
 .menu-bar__menu-box-1 > ul > li {
-  display: inline-block; /* 메뉴 항목 가로 배치 */
+  display: inline-block; /* 메뉴 항목을 인라인 블록으로 설정하여 가로 배치 */
 }
 
 .menu-bar__menu-box-1 > ul > li > a {
@@ -57,54 +59,54 @@ body {
 
 # 메인 스타일
 .main {
-  margin-top: 175px;
-  text-align: center;
+  margin-top: 175px; /* 메인 컨텐츠 상단 여백 */
+  text-align: center; /* 중앙 정렬 */
 }
 
 # 입력 상자 스타일
 .input-box {
-  margin-top: 20px;
-  width: 584px;
-  height: 46px;
-  border-radius: 24px;
-  border: 1px solid #96d2ea;
-  padding-left: 30px;
-  padding-right: 80px;
+  margin-top: 20px; /* 상단 여백 */
+  width: 584px; /* 너비 */
+  height: 46px; /* 높이 */
+  border-radius: 24px; /* 테두리 반경 */
+  border: 1px solid #96d2ea; /* 테두리 스타일과 색상 */
+  padding-left: 30px; /* 왼쪽 여백 */
+  padding-right: 80px; /* 오른쪽 여백 */
 }
 
 .input-box:focus {
-  outline: none;
+  outline: none; /* 포커스 테두리 제거 */
   border-color: #ffffff; /* 포커스 시 테두리 색상 */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 포커스 시 그림자 효과 */
 }
 
 # 검색 아이콘
 .search-icon {
-  position: relative;
-  right: 45px;
-  color: #96d2ea;
-  border: 0;
-  background-color: transparent;
+  position: relative; /* 상대 위치 설정 */
+  right: 45px; /* 오른쪽 위치 조정 */
+  color: #96d2ea; /* 아이콘 색상 */
+  border: 0; /* 테두리 없음 */
+  background-color: transparent; /* 배경 투명 */
 }
 
-# 오늘의 ootd는? 
+# "오늘의 OOTD는?" 내용 스타일
 .content {
-  font-family: 'SBAggroB';
-  font-weight: normal;
-  font-style: normal;
-  color: #76c7e4;
-  font-size: 30px;
-  text-shadow: 2px 2px 4px rgba(200, 200, 200, 0.8), 2px 2px 4px rgba(255, 255, 255, 0.4);
+  font-family: 'SBAggroB'; /* 폰트 설정 */
+  font-weight: normal; /* 폰트 두께 */
+  font-style: normal; /* 폰트 스타일 */
+  color: #76c7e4; /* 텍스트 색상 */
+  font-size: 30px; /* 폰트 크기 */
+  text-shadow: 2px 2px 4px rgba(200, 200, 200, 0.8), 2px 2px 4px rgba(255, 255, 255, 0.4); /* 텍스트 그림자 효과 */
 }
-# 하단의 내용
+# 하단의 내용 스타
 .content2 {
-  font-family: 'SBAggroB';
-  font-weight: normal;
-  font-style: normal;
-  color: #76c7e4;
-  font-size: 30px;
+  font-family: 'SBAggroB'; /* 폰트 설정 */
+  font-weight: normal; /* 폰트 두께 */
+  font-style: normal; /* 폰트 스타일 */
+  color: #76c7e4; /* 텍스트 색상 */
+  font-size: 30px; /* 폰트 크기 */
 }
 
 p {
-  margin-bottom: 1px;
+  margin-bottom: 1px; /* 단락의 하단 여백 */
 }
