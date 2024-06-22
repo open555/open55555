@@ -1,11 +1,11 @@
-# 폰트 스타일
+/* 폰트 스타일 */
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-# 전체 페이지 스타일
+/* 전체 페이지 스타일 */
 body {
     font-family: 'SBAggroB', Arial, sans-serif; /* SBAggroB 폰트, Arial, 기본 sans-serif 폰트 순서로 적용 */
     color: #76c7e4; /* 전체 페이지 글자 색상 */
@@ -13,7 +13,7 @@ body {
     margin: 0; /* 바깥 여백 없앰 */
     padding: 20px; /* 내부 여백 추가 */
 }
-# 상단의 메뉴바 스타일
+/* 상단의 메뉴바 스타일 */
 h3.menu-bar {
     margin-bottom: 50px; /* 메뉴바 하단 여백 */
 }
@@ -44,7 +44,7 @@ a:active {
     color: #bdbebd; /* 링크에 마우스를 올리거나 클릭 시 색상 변경 */
 }
 
-# 화면 사용 공간 지정
+/* 화면 사용 공간 지정*/
 .container {
     max-width: 800px; /* 최대 너비 800px */
     text-align: center; /* 컨테이너 내부 요소 가운데 정렬 */
@@ -54,39 +54,39 @@ a:active {
     margin-bottom: 30px;
 }
 
-# trend-section 스타일
+/* trend-section 스타일*/
 .trend-section {
    margin-bottom: 100px; /* 각 트렌드 섹션의 아래 여백 */
     text-align: left; /* 텍스트 왼쪽 정렬 */
 
-# 주제 스타일
+/* 주제 스타일*/
 .trend-section h2 {
    color: #ff6f61; /* 주제 텍스트 색상 */
    font-size: 1.8em; /* 주제 텍스트 글자 크기 */
    margin-bottom: 10px; /* 주제 텍스트 아래 여백 */
 }
 
-# 내용 스타일
+/* 내용 스타일*/
 .trend-content {
     display: flex; /* Flexbox 레이아웃 사용 */
    align-items: center; /* 세로 방향으로 아이템들을 가운데 정렬 */
 }
 
-# 내용 - 이미지
+/* 내용 - 이미지
 trend-content img {
         max-width: 40%; /* 이미지 최대 너비 */
         height: auto; /* 이미지 높이 자동 조정 */
         margin-right: 20px; /* 이미지 오른쪽 여백 */
     }
 
-# 내용 - 텍스트
+/* 내용 - 텍스트*/
 .trend-content .text {
         max-width: 60%; /* 텍스트 최대 너비 */
         font-size: 1.1em; /* 텍스트 글자 크기 */
         color: #4e4e4e; /* 텍스트 색상 */
     }
     
-# 팬톤 부분만 가운데 정렬
+/* 팬톤 부분만 가운데 정렬*/
 .trend-section-pantone {
     margin-bottom: 40px; /* 팬톤 부분의 아래 여백 */
     text-align: center; /* 텍스트 가운데 정렬 */
