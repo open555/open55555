@@ -1,4 +1,4 @@
-# 폰트 스타일
+/* 폰트 스타일 */
 @font-face {
   font-family: 'SBAggroB';
   src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
@@ -6,13 +6,13 @@
   font-style: normal;
 }
 
-# 기본 스타일 초기화
+/* 기본 스타일 초기화 */
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none; /* 목록 스타일 제거 */
 }
-# 상단 메뉴바 스타일
+/* 상단 메뉴바 스타일 */
 a {
   color: inherit; /* 링크 색상을 부모 요소에서 상속 */
   font-size: 5px; /* 링크 폰트 크기 */
@@ -30,7 +30,7 @@ a:active {
   color: #bdbebd; /* 링크 호버 시 색상 변경 */
 } 
 
-# 중앙 정렬을 위한 컨테이너 스타일 
+/* 중앙 정렬을 위한 컨테이너 스타일  */
 .con {
   margin-left: auto; /* 왼쪽 여백 자동 설정 */
   margin-right: auto; /* 오른쪽 여백 자동 설정 */
@@ -38,7 +38,7 @@ a:active {
   color: #76c7e4; /* 텍스트 색상 */
 }
 
-# 상단의 메뉴바 스타일
+/* 상단의 메뉴바 스타일 */
 .menu-bar__menu-box-1 > ul {
   text-align: center;  /* 메뉴 항목 가운데 정렬 */
 }
@@ -57,13 +57,13 @@ body {
   display: contents;
 }
 
-# 메인 스타일
+/* 메인 스타일 */
 .main {
   margin-top: 175px; /* 메인 컨텐츠 상단 여백 */
   text-align: center; /* 중앙 정렬 */
 }
 
-# 입력 상자 스타일
+/* 입력 상자 스타일 */
 .input-box {
   margin-top: 20px; /* 상단 여백 */
   width: 584px; /* 너비 */
@@ -80,7 +80,7 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* 포커스 시 그림자 효과 */
 }
 
-# 검색 아이콘
+/* 검색 아이콘 */
 .search-icon {
   position: relative; /* 상대 위치 설정 */
   right: 45px; /* 오른쪽 위치 조정 */
@@ -89,7 +89,7 @@ body {
   background-color: transparent; /* 배경 투명 */
 }
 
-# "오늘의 OOTD는?" 내용 스타일
+/* "오늘의 OOTD는?" 내용 스타일 */
 .content {
   font-family: 'SBAggroB'; /* 폰트 설정 */
   font-weight: normal; /* 폰트 두께 */
@@ -98,7 +98,7 @@ body {
   font-size: 30px; /* 폰트 크기 */
   text-shadow: 2px 2px 4px rgba(200, 200, 200, 0.8), 2px 2px 4px rgba(255, 255, 255, 0.4); /* 텍스트 그림자 효과 */
 }
-# 하단의 내용 스타
+/* 하단의 내용 스타 */
 .content2 {
   font-family: 'SBAggroB'; /* 폰트 설정 */
   font-weight: normal; /* 폰트 두께 */
