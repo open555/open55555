@@ -6,12 +6,15 @@
     <title>사용방법</title>
     {% load static %}
   <link rel="stylesheet" type="text/css" href="{% static 'myapp/use.css' %}">
+   # 정적 파일과 연결된 CSS 파일을 로드합니다
 </head>
 <body>
+    # 메뉴 바 섹션
     <h3 class="menu-bar con-min-width">
     <div class="con">
-      <nav class="menu-bar__menu-box-1 text-align-center">
+      <nav class="menu-bar__menu-box-1 text-align-center"> # 메뉴 박스 가운데 정렬
         <ul class="inline-grid">
+            # 인라인 그리드 스타일의 메뉴 목록
             <li><a href="{% url 'weather' %}">Weather Home</a></li>
             <li><a href="{% url 'trend' %}">Trend Analysis</a></li>
             <li><a href="{% url 'method_of_use' %}">Method of Use</a></li>
@@ -24,10 +27,13 @@
   </h3>
 
   <div class="container">
-    <h1>사용방법</h1>
+    <h1>사용방법</h1> # 섹션 제목 
+      
+    # 1단계
     <h2>
       <img src="{% static 'myapp/images/search.png' %}" alt="검색창 이미지" class="search-image">
       1. 검색창에 자신의 위치 정보를 작성한다.</h2>
+    # 자세한 검색 방법 설명
     <ul>
       <li class="one">(1) 특별시/광역시/도만을 아는 경우<br></li>
       <li class="two">예: 제주특별자치도 0 0<br></li>
@@ -37,21 +43,25 @@
       <li class="two">예: 제주특별자치도 제주시 아라동<br></li>
     </ul>
 
+    # 2단계
     <h2>
       2. Enter를 눌러 검색한다.</h2>
     <p>자신의 위치 정보를 입력한 후 검색 버튼을 클릭하여 오늘의 날씨를 확인합니다.</p>
-
+    
+    # 3단계
     <h2>
       3. 오늘의 온도와 기상상태를 확인한다.</h2>
     <p><img src="{% static 'myapp/images/recom1.png' %}"alt="검색창 이미지" class="recom1-image">
       현재 날씨 정보를 확인하고, 기온과 기상 상태를 살펴봅니다.</p>
-
+      
+    # 4단계
     <h2>
       4. 추천 옷차림을 참고한다.</h2>
     <p>
       <img src="{% static 'myapp/images/recom2.png' %}"alt="검색창 이미지" class="recom2-image">
       오늘의 날씨에 맞는 추천 옷차림을 확인하고 준비합니다.</p>
 
+    # 5단계
     <h2>5. 멋쟁이가 된다 - !</h2>
     <p>추천 옷차림을 따라 멋쟁이가 되어보세요!</p>
   </div>
