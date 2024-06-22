@@ -1,10 +1,11 @@
+# 폰트 스타일
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
+# 전체 페이지 스타일
 body {
     font-family: 'SBAggroB', Arial, sans-serif;
     color: #76c7e4;
@@ -12,7 +13,7 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+# 상단의 메뉴바 스타일
 h3.menu-bar {
     margin-bottom: 100px;
 }
@@ -31,6 +32,19 @@ h3.menu-bar {
     padding: 10px 30px;
 }
 
+a {
+    color: inherit;
+    font-size: 14px; /* 원래 5px에서 14px로 수정 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover,            # 마우스가 위로 올라갔을 때
+a:active {          # 활성화된 상태일 때 (클릭하고 있는 동안)
+    color: #bdbebd;  # 색상 변경
+}
+
+# 화면 사용 공간 지정
 .container {
     max-width: 800px;
     margin-top: 30px;
@@ -40,30 +54,20 @@ h3.menu-bar {
     margin-bottom: 30px;
 }
 
-a {
-    color: inherit;
-    font-size: 14px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover,
-a:active {
-    color: #bdbebd;
-}
-
-/* Additional styles for situation sections */
+# 주제별 스타일
 .situation-section {
     margin-bottom: 150px;
-    text-align: left;
+    text-align: left; # 왼쪽 정렬
 }
 
+# 제목 텍스트 스타일
 .situation-section h2 {
     color: #000;
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
+# 이미지 스타일
 .image-container {
     display: flex;
     justify-content: center;
@@ -77,6 +81,7 @@ a:active {
     border-radius: 10px;
 }
 
+# 내용 텍스트 스타일
 .situation-content .text {
     font-size: 1.1em;
     color: #4e4e4e;
