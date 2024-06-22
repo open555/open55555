@@ -7,47 +7,48 @@
 }
 # 전체 페이지 스타일
 body {
-    font-family: 'SBAggroB', Arial, sans-serif;
-    color: #76c7e4;
-    background-color: #fff;
-    margin: 0;
-    padding: 20px;
+    font-family: 'SBAggroB', Arial, sans-serif; /* SBAggroB 폰트, Arial, 기본 sans-serif 폰트 순서로 적용 */
+    color: #76c7e4; /* 전체 페이지 글자 색상 */
+    background-color: #fff; /* 배경색 */
+    margin: 0; /* 바깥 여백 없앰 */
+    padding: 20px; /* 내부 여백 추가 */
 }
 # 상단의 메뉴바 스타일
 h3.menu-bar {
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* 메뉴바 하단 여백 */
 }
 
 .menu-bar__menu-box-1 > ul {
-    text-align: center;
+    text-align: center; /* 메뉴 항목 가운데 정렬 */
 }
 
 .menu-bar__menu-box-1 > ul > li {
-    display: inline-block;
+    display: inline-block; /* 메뉴 항목을 인라인 블록으로 배치 */
 }
 
 .menu-bar__menu-box-1 > ul > li > a {
-    display: block;
-    font-size: 20px;
-    padding: 10px 30px;
+    display: block; /* 링크를 블록 요소로 변환하여 전체 영역 클릭 가능하게 함 */
+    font-size: 20px; /* 메뉴 항목 글자 크기 */
+    padding: 10px 30px; /* 링크 안의 여백 */
 }
 
 a {
-    color: inherit;
-    font-size: 14px;
-    text-decoration: none;
-    transition: color 0.3s;
+     color: inherit; /* 링크 색상을 부모 요소에서 상속 */
+    font-size: 14px; /* 기본 링크 글자 크기 */
+    text-decoration: none; /* 밑줄 제거 */
+    transition: color 0.3s; /* 색상 변경 시 부드러운 전환 효과 */
 }
 
 a:hover,
 a:active {
-    color: #bdbebd;
+    color: #bdbebd; /* 링크에 마우스를 올리거나 클릭 시 색상 변경 */
 }
+
 # 화면 사용 공간 지정
 .container {
-    max-width: 800px;
+    max-width: 800px; /* 최대 너비 800px */
+    text-align: center; /* 컨테이너 내부 요소 가운데 정렬 */
     margin-top: 30px;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -55,58 +56,58 @@ a:active {
 
 # trend-section 스타일
 .trend-section {
-    margin-bottom: 100px;
-    text-align: left; 
+   margin-bottom: 100px; /* 각 트렌드 섹션의 아래 여백 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
 
 # 주제 스타일
 .trend-section h2 {
-    color: #ff6f61;
-    font-size: 1.8em;
-    margin-bottom: 10px;
+   color: #ff6f61; /* 주제 텍스트 색상 */
+   font-size: 1.8em; /* 주제 텍스트 글자 크기 */
+   margin-bottom: 10px; /* 주제 텍스트 아래 여백 */
 }
 
 # 내용 스타일
 .trend-content {
     display: flex; /* Flexbox 레이아웃 사용 */
-    align-items: center; /* 아이템을 세로 방향으로 가운데 정렬 */
+   align-items: center; /* 세로 방향으로 아이템들을 가운데 정렬 */
 }
 
 # 내용 - 이미지
-.trend-content img {
-    max-width: 40%;
-    height: auto;
-    margin-right: 20px;
-}
+trend-content img {
+        max-width: 40%; /* 이미지 최대 너비 */
+        height: auto; /* 이미지 높이 자동 조정 */
+        margin-right: 20px; /* 이미지 오른쪽 여백 */
+    }
 
 # 내용 - 텍스트
 .trend-content .text {
-    max-width: 60%;
-    font-size: 1.1em;
-    color: #4e4e4e;
-}
+        max-width: 60%; /* 텍스트 최대 너비 */
+        font-size: 1.1em; /* 텍스트 글자 크기 */
+        color: #4e4e4e; /* 텍스트 색상 */
+    }
     
 # 팬톤 부분만 가운데 정렬
 .trend-section-pantone {
-    margin-bottom: 40px;
-    text-align: center; 
+    margin-bottom: 40px; /* 팬톤 부분의 아래 여백 */
+    text-align: center; /* 텍스트 가운데 정렬 */
 }
 
 .trend-section-pantone h2 {
-    color: #ff6f61;
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    text-align: center;
+    color: #ff6f61; /* 주제 텍스트 색상 */
+    font-size: 1.8em; /* 주제 텍스트 글자 크기 */
+    margin-bottom: 10px; /* 주제 텍스트 아래 여백 */
+    text-align: center; /* 텍스트 가운데 정렬 */
 }
 
 .trend-content-pantone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: center; /* 세로 방향으로 아이템들을 가운데 정렬 */
+    justify-content: center; /* 가로 방향으로 아이템들을 가운데 정렬 */
 }
 
 .trend-content-pantone .text {
-    max-width: 100%;
-    font-size: 1.1em;
-    text-align: center;
-    color: #4e4e4e;
+     max-width: 100%; /* 텍스트 최대 너비 */
+    font-size: 1.1em; /* 텍스트 글자 크기 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    color: #4e4e4e; /* 텍스트 색상 */
 }
