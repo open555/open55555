@@ -1,3 +1,4 @@
+# 폰트 스타일
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
@@ -5,6 +6,7 @@
     font-style: normal;
 }
 
+# 전체 페이지 스타일
 body {
     font-family: 'SBAggroB', Arial, sans-serif;
     color: #76c7e4;
@@ -13,41 +15,10 @@ body {
     padding: 20px;
 }
 
+# 상단의 메뉴바 스타일
 h3.menu-bar {
             margin-bottom: 100px;
 }
-
-h2.spring {
-            color: #4CAF50; /* 봄 제목 색상 */
-            font-family: 'SBAggroB', Arial, sans-serif;
-            text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8);
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        h2.summer {
-            color: #FFC107; /* 여름 제목 색상 */
-            font-family: 'SBAggroB', Arial, sans-serif;
-            text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8);
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        h2.autumn {
-            color: #b54c1a; /* 가을 제목 색상 */
-            font-family: 'SBAggroB', Arial, sans-serif;
-            text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8);
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
-
-        h2.winter {
-            color: #2196F3; /* 겨울 제목 색상 */
-            font-family: 'SBAggroB', Arial, sans-serif;
-            text-shadow: 2px 2px 5px rgba(214, 211, 211, 0.8);
-            margin-top: 30px;
-            margin-bottom: 20px;
-        }
 
 .menu-bar__menu-box-1 > ul {
     text-align: center;
@@ -70,11 +41,50 @@ a {
     transition: color 0.3s;
 }
 
-a:hover,
-a:active {
-    color: #bdbebd;
+a:hover,            # 마우스가 위로 올라갔을 때
+a:active {          # 활성화된 상태일 때 (클릭하고 있는 동안)
+    color: #bdbebd;  # 색상 변경
 }
 
+# 계절별 스타일
+.season-item h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h2.spring {
+            color: #4CAF50; /* 봄 제목 색상 */
+            font-family: 'SBAggroB', Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8);
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+h2.summer {
+            color: #FFC107; /* 여름 제목 색상 */
+            font-family: 'SBAggroB', Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8);
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+h2.autumn {
+            color: #b54c1a; /* 가을 제목 색상 */
+            font-family: 'SBAggroB', Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgba(211, 211, 211, 0.8);
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+h2.winter {
+            color: #2196F3; /* 겨울 제목 색상 */
+            font-family: 'SBAggroB', Arial, sans-serif;
+            text-shadow: 2px 2px 5px rgba(214, 211, 211, 0.8);
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+# 화면 사용 공간 지정
 .season-container {
     margin-top: 30px;
     text-align: center; /* 가운데 정렬을 추가 */
@@ -91,23 +101,21 @@ a:active {
     text-align: center; /* 가운데 정렬을 추가 */
 }
 
+# 이미지의 비 조정
 .season-item img {
     max-width: 35%;
     border-radius: 8px;
 }
 
+# 텍스트의 비율 조정
 .season-item .text {
     width: 60%;
     text-align: left;
     padding: 0 20px;
-    color: #8a8a8a; /* 가을 제목 색상 */
+    color: #8a8a8a;
 }
 
-.season-item h2 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
+# 계절별 내용 스타일
 .season-item p {
     font-size: 18px;
     line-height: 1.6;
