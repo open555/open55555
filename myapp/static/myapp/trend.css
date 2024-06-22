@@ -1,10 +1,11 @@
+# 폰트 스타일
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
+# 전체 페이지 스타일
 body {
     font-family: 'SBAggroB', Arial, sans-serif;
     color: #76c7e4;
@@ -12,7 +13,7 @@ body {
     margin: 0;
     padding: 20px;
 }
-
+# 상단의 메뉴바 스타일
 h3.menu-bar {
     margin-bottom: 50px;
 }
@@ -31,15 +32,6 @@ h3.menu-bar {
     padding: 10px 30px;
 }
 
-.container {
-    max-width: 800px;
-    margin-top: 30px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-}
-
 a {
     color: inherit;
     font-size: 14px;
@@ -51,39 +43,52 @@ a:hover,
 a:active {
     color: #bdbebd;
 }
-
-/* Additional styles for trend sections */
-.trend-section {
-    margin-bottom: 100px;
-    text-align: left; /* Align text to the left */
+# 화면 사용 공간 지정
+.container {
+    max-width: 800px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
+# trend-section 스타일
+.trend-section {
+    margin-bottom: 100px;
+    text-align: left; 
+
+# 주제 스타일
 .trend-section h2 {
     color: #ff6f61;
     font-size: 1.8em;
     margin-bottom: 10px;
 }
 
+# 내용 스타일
 .trend-content {
-    display: flex;
-    align-items: center;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: center; /* 아이템을 세로 방향으로 가운데 정렬 */
 }
 
+# 내용 - 이미지
 .trend-content img {
     max-width: 40%;
     height: auto;
     margin-right: 20px;
 }
 
+# 내용 - 텍스트
 .trend-content .text {
     max-width: 60%;
     font-size: 1.1em;
     color: #4e4e4e;
 }
-
+    
+# 팬톤 부분만 가운데 정렬
 .trend-section-pantone {
     margin-bottom: 40px;
-    text-align: center; /* Align text to the left */
+    text-align: center; 
 }
 
 .trend-section-pantone h2 {
