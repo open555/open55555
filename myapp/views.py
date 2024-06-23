@@ -7,11 +7,11 @@ from .models import Review
 from .forms import ReviewForm, AdminAuthForm
 from .utils import authenticate_admin
 
-# CSV 파일을 읽어옵니다.
+# CSV 파일을 읽어옴
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 csv_path = os.path.join(BASE_DIR, 'myapp/data/location_file.csv')
 xy_df = pd.read_csv(csv_path)
-# NaN 값을 0으로 대체합니다.
+# NaN 값을 0으로 대체함
 a_df = xy_df.fillna(0)
 
 # 옷차림 데이터 세분화
@@ -23,6 +23,7 @@ clothing_data = {
     'accessories': ['목도리, 장갑, 귀마개', '장갑, 히트텍', '모자, 스카프', '얇은 스카프', '모자, 얇은 스카프', '선글라스, 모자', '선글라스, 모자', '선글라스, 모자']
 }
 
+# 온도 범위 정의
 temperature_ranges = [
     {'category': '매우 추운 날씨', 'temperature_range': (-30, -10)},
     {'category': '추운 날씨', 'temperature_range': (-10, 0)},
@@ -34,12 +35,14 @@ temperature_ranges = [
     {'category': '매우 더운 날씨', 'temperature_range': (25, 40)}
 ]
 
+# 온도를 카테고리화하는 함수
 def categorize_temperature(temp):
     for idx, temp_category in enumerate(temperature_ranges):
         if temp_category['temperature_range'][0] <= temp < temp_category['temperature_range'][1]:
             return idx
     return -1
 
+# 온도에 따른 이미지를 반환하는 함수
 def get_image_by_temperature(temperature):
     if temperature < -10:
         return 'myapp/images/very_cold.jpeg'
@@ -60,6 +63,7 @@ def get_image_by_temperature(temperature):
     else:
         return 'myapp/images/very_hot.jpeg'
 
+# 날씨 정보를 가져오고 옷차림을 추천하는 함수
 def get_weather_and_recommendation(nx, ny, location):
     API_Key = "I8rsN/eXyw28QEDPY4YblMW9rMSLmoQvM6vXBo9FTRfCOALb0bvQs2ggVULQHlwnesuHCzVcu16/PcmI28dIEQ=="
     URL = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst"
@@ -79,7 +83,7 @@ def get_weather_and_recommendation(nx, ny, location):
     else:
         base_time = f"{(hour-1):02d}30"
     
-    # 디버깅 출력을 추가합니다
+    # 디버깅 출력을 추가
     print(f"현재 시각: {now}")
     print(f"설정된 base_time: {base_time}")
     
@@ -140,6 +144,7 @@ def get_weather_and_recommendation(nx, ny, location):
     
     return weather_data
 
+# 온도에 따른 옷차림을 추천하는 함수
 def recommend_clothing(temperature, location):
     temp_category = categorize_temperature(temperature)
     if temp_category == -1:
@@ -154,6 +159,7 @@ def recommend_clothing(temperature, location):
     
     return recommendation
 
+# 날씨 페이지 렌더링 함수
 def weather(request):
     if request.method == 'POST':
         address = request.POST['address']
@@ -188,18 +194,23 @@ def weather(request):
             return render(request, 'myapp/weather.html', {'error': '조건에 맞춰 다시 입력해주세요.'})
     return render(request, 'myapp/weather.html')
 
+# 트렌드 페이지 렌더링 함수
 def trend(request):
     return render(request, 'myapp/trend.html')
 
+# 사용 방법 페이지 렌더링 함수
 def method_of_use(request):
     return render(request, 'myapp/method_of_use.html')
 
+# 상황별 옷차림 페이지 렌더링 함수
 def situation(request):
     return render(request, 'myapp/situation.html')
 
+# 계절별 옷차림 페이지 렌더링 함수
 def season(request):
     return render(request, 'myapp/season.html')
 
+# 후기 페이지 렌더링 함수
 def qna(request):
     reviews = Review.objects.all()
     review_form = ReviewForm()
@@ -211,6 +222,7 @@ def qna(request):
     }
     return render(request, 'myapp/qna.html', context)
 
+# 후기를 작성하는 함수
 def post_review(request):
     if request.method == 'POST':
         form = ReviewForm(request.POST)
@@ -219,6 +231,7 @@ def post_review(request):
             return redirect('qna')
     return redirect('qna')
 
+# 후기를 삭제하는 함수
 def delete_review(request, review_id):
     if request.method == 'POST':
         admin_auth_form = AdminAuthForm(request.POST)
