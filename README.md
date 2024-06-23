@@ -22,3 +22,36 @@
 3. 안내에 따라 사용하고 그 이외에 여러 패션 관련 정보를 확인할 수 있습니다! 
 https://github.com/open555/open55555/issues/1#issue-2368916867
 
+
+
+
+
+홈페이지 제작 관련 출처
+
+로고
+https://www.istockphoto.com/kr/%EB%B2%A1%ED%84%B0/%EC%82%AC%EA%B3%84%EC%A0%88-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B8%B0%ED%98%B8-%EA%B8%B0%ED%98%B8-%EA%B2%A8%EC%9A%B8-%EB%B4%84-%EC%97%AC%EB%A6%84-%EA%B0%80%EC%9D%84-%EB%88%88%EC%86%A1%EC%9D%B4-%EC%9E%8E-%ED%83%9C%EC%96%91-%EA%B0%80%EC%9D%84-%EC%9E%8E-%EB%9D%BC%EC%9D%B8-%EC%95%84%ED%8A%B8-gm1439555957-479799577
+html 표지 구성 참고자료
+https://velog.io/@jaeyounging/Chapter03.-%EA%B5%AC%EA%B8%80-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0
+폰트
+https://noonnu.cc/font_page/738
+팬톤
+https://pantone.kr/ColoroftheYear2024.html
+올드머니
+카미노|시스티나
+고프코어
+주우재 
+y2k
+오아이오아이
+여자 운동복
+배럴핏
+여자 면접룩
+자체발광오피스
+https://m.fashionn.com/board/read.php?table=style&number=19834
+남자 면접룩
+https://brunch.co.kr/@miracle205/137
+장례식장
+https://www.goifuneral.co.kr/guidebook/tip/ongoing2/1/
+여자 하객룩
+mydaily
+남자 하객룩
+https://blog.naver.com/jhcjjang1696/223107203601
