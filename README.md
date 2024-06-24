@@ -2,17 +2,18 @@
 
 ## "날씨에 따른 옷차림 추천 서비스" 소개
 
-매일 아침, '오늘 날씨는 어떨까?', '무슨 옷을 입어야 할까?' 고민해보신 적 있나요?  
+매일 아침, '오늘 날씨는 어떻지?', '무슨 옷을 입어야 할까?'라는 고민해보신 적 있나요?  
 이러한 사소하지만 매일 겪는 고민을 덜어드리기 위해, 저희 5조는 "날씨에 따른 옷차림 추천 서비스"를 기획했습니다.  
 이 서비스는 사용자가 현재 위치를 입력하면, 날씨 API를 통해 해당 지역의 날씨 정보를 확인하고, 그에 맞는 옷차림을 추천해 드립니다.
 
 ## 개발 과정
 
 1. **날씨 API 연동**  
-   - 날씨 데이터를 받아오기 위해 외부 날씨 API를 연동합니다.
+   - 날씨 데이터를 받아오기 위해 공공데이터포털에서 받아온 단기예보 날씨 API를 연동합니다.
+   - https://www.data.go.kr/data/15084084/openapi.do
 
 2. **옷차림 추천 알고리즘 작성**  
-   - 받아온 날씨 데이터를 바탕으로 적절한 옷차림을 추천하는 알고리즘을 작성합니다.
+   - 날씨 데이터를 바탕으로 적절한 옷차림을 추천하는 알고리즘을 작성합니다.
 
 3. **전체 코드 작성**  
    - 날씨 API와 옷차림 추천 알고리즘을 통합하여 전체 시스템을 구현합니다.
@@ -21,7 +22,7 @@
    - 사용자가 쉽게 이용할 수 있는 웹사이트를 제작합니다.
 
 5. **테스트 및 보완**  
-   - 서비스 실행 후, 사용자 피드백을 받아 보완합니다.
+   - 서비스 실행 후, 서로 피드백을 하여 보완합니다.
 
 ## 사용 방법
 
@@ -32,42 +33,21 @@
    - 메뉴에서 '사용 방법' 카테고리를 클릭합니다.
 
 3. **서비스 이용**  
-   - 안내에 따라 서비스를 이용하고, 패션 관련 다양한 정보를 확인할 수 있습니다.
+   - 안내에 따라 서비스를 이용하고, 다른 카테고리에서는 패션 관련 다양한 정보를 확인할 수 있습니다.
 
 ## 홈페이지 제작 관련 출처
 
 - 디자인 및 기능 구현에 참고한 리소스와 출처를 명시합니다.
-
-**"매일 아침, 더 이상 날씨와 옷차림으로 고민하지 마세요. 저희의 서비스가 도와드리겠습니다!"**
-
-
-
-홈페이지 제작 관련 출처
-
-로고
-https://www.istockphoto.com/kr/%EB%B2%A1%ED%84%B0/%EC%82%AC%EA%B3%84%EC%A0%88-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B8%B0%ED%98%B8-%EA%B8%B0%ED%98%B8-%EA%B2%A8%EC%9A%B8-%EB%B4%84-%EC%97%AC%EB%A6%84-%EA%B0%80%EC%9D%84-%EB%88%88%EC%86%A1%EC%9D%B4-%EC%9E%8E-%ED%83%9C%EC%96%91-%EA%B0%80%EC%9D%84-%EC%9E%8E-%EB%9D%BC%EC%9D%B8-%EC%95%84%ED%8A%B8-gm1439555957-479799577
-html 표지 구성 참고자료
-https://velog.io/@jaeyounging/Chapter03.-%EA%B5%AC%EA%B8%80-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0
-폰트
-https://noonnu.cc/font_page/738
-팬톤
-https://pantone.kr/ColoroftheYear2024.html
-올드머니
-카미노|시스티나
-고프코어
-주우재 
-y2k
-오아이오아이
-여자 운동복
-배럴핏
-여자 면접룩
-자체발광오피스
-https://m.fashionn.com/board/read.php?table=style&number=19834
-남자 면접룩
-https://brunch.co.kr/@miracle205/137
-장례식장
-https://www.goifuneral.co.kr/guidebook/tip/ongoing2/1/
-여자 하객룩
-mydaily
-남자 하객룩
-https://blog.naver.com/jhcjjang1696/223107203601
+- 로고 : https://www.istockphoto.com/kr/%EB%B2%A1%ED%84%B0/%EC%82%AC%EA%B3%84%EC%A0%88-%EC%95%84%EC%9D%B4%EC%BD%98-%EA%B8%B0%ED%98%B8-%EA%B8%B0%ED%98%B8-%EA%B2%A8%EC%9A%B8-%EB%B4%84-%EC%97%AC%EB%A6%84-%EA%B0%80%EC%9D%84-%EB%88%88%EC%86%A1%EC%9D%B4-%EC%9E%8E-%ED%83%9C%EC%96%91-%EA%B0%80%EC%9D%84-%EC%9E%8E-%EB%9D%BC%EC%9D%B8-%EC%95%84%ED%8A%B8-gm1439555957-479799577
+- html 표지 구성 참고자료 : https://velog.io/@jaeyounging/Chapter03.-%EA%B5%AC%EA%B8%80-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0
+- 폰트 : https://noonnu.cc/font_page/738
+- 팬톤 : https://pantone.kr/ColoroftheYear2024.html
+- 올드머니 : 카미노|시스티나
+- 고프코어 : 주우재 
+- y2k : 오아이오아이
+- 여자 운동복 : 배럴핏
+- 여자 면접룩 : 자체발광오피스 https://m.fashionn.com/board/read.php?table=style&number=19834
+- 남자 면접룩 : https://brunch.co.kr/@miracle205/137
+- 장례식장 : https://www.goifuneral.co.kr/guidebook/tip/ongoing2/1/
+- 여자 하객룩 : mydaily
+- 남자 하객룩 : https://blog.naver.com/jhcjjang1696/223107203601
